@@ -1,4 +1,4 @@
-window.__EXT_BOOT_VERSION = "1.0.0 (Stable)"; // required marker
+window.__EXT_BOOT_VERSION = "1.0.0 (Beta)"; // required marker
 
 // Hier voeg je spellen toe: naam -> mod URL
 const GAME_MODS = {
