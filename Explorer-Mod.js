@@ -163,7 +163,7 @@ window.__EXT_MOD_VERSION = "1.0.0 (Beta)";
   menu.innerHTML = `
     <button class="closeBtn">✕</button>
     <h2>XRSDEV Mods</h2>
-    <div class="ext-marquee"><div class="ext-marquee-content">1.0.0 (Beta) • Alsjeblieft! Doe wat je wilt • Veel plezier!</div></div>
+    <div class="ext-marquee"><div class="ext-marquee-content">The Explorer • 1.0.0 (Beta) • Alsjeblieft! Doe wat je wilt • Veel plezier!</div></div>
 
     <!-- Unlimited Resources -->
     <div class="ext-row">
