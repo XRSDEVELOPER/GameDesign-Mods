@@ -1,16 +1,12 @@
-window.__EXT_BOOT_VERSION = "1.0.0 (Beta)"; // required marker
+window.__EXT_BOOT_VERSION = "1.0.0 (Beta)";
 
-// Hier voeg je spellen toe: naam -> mod URL
 const GAME_MODS = {
   explorer: "https://xrsdeveloper.github.io/GameDesign-Mods/games/Explorer-Mod.js"
 };
 
-// Detecteer spelnaam op basis van URL
 function detectGameFromUrl() {
   const url = location.href.toLowerCase();
-
   if (url.includes("explorer")) return "explorer";
-
   return null;
 }
 
@@ -28,7 +24,6 @@ function detectGameFromUrl() {
     const res = await fetch(REMOTE_URL, { cache: "no-store" });
     const text = await res.text();
 
-    // Vind versie marker in remote script
     const remoteVersion = (text.match(/__EXT_MOD_VERSION\s*=\s*["']([^"']+)["']/) || [])[1];
     const cachedVersion = localStorage.getItem(`__ext_mod_version_${game}`);
     const cachedScript  = localStorage.getItem(`__ext_mod_script_${game}`);
@@ -59,7 +54,6 @@ function detectGameFromUrl() {
     }
   }
 
-  // Inject het echte script in de pagina
   function runScript(code) {
     const blob = new Blob([code], { type: "text/javascript" });
     const url = URL.createObjectURL(blob);
