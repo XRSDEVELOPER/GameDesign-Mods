@@ -2,7 +2,7 @@ window.__EXT_BOOT_VERSION = "1.0.0 (Beta)"; // required marker
 
 // Hier voeg je spellen toe: naam -> mod URL
 const GAME_MODS = {
-  explorer: "https://xrsdeveloper.github.io/GameDesign-Mods/Explorer-Mod.js"
+  explorer: "https://xrsdeveloper.github.io/GameDesign-Mods/games/Explorer-Mod.js"
 };
 
 // Detecteer spelnaam op basis van URL
